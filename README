@@ -1,0 +1,43 @@
+1. **Função `processarTexto(texto, operacao)`**:
+
+   - Acionada quando o usuário clica em um botão para criptografar ou
+     descriptografar.
+   - Determina se a operação é criptografar ou descriptografar, chamando a
+     função apropriada (`criptografarTexto` ou `descriptografarTexto`).
+   - Exibe o resultado na página e, se nada for digitado, exibe uma imagem e
+     alguns elementos HTML.
+
+2. **Função `exibirResultado(resultado)`**:
+
+   - Atualiza o conteúdo do elemento com ID "mensagem_resposta" com o resultado.
+   - Oculta elementos adicionais, como a imagem principal e o parágrafo
+     "meuParagrafo", se necessário.
+
+3. **Função `exibirImagem()`**:
+
+   - Exibe uma imagem e limpa o conteúdo do parágrafo "mensagem_resposta" quando
+     nada é digitado.
+
+4. **Funções `criptografarTexto` e `descriptografarTexto`**:
+
+   - Realizam as operações de criptografia e descriptografia, substituindo
+     vogais por sequências específicas e vice-versa.
+
+5. **Função `adicionarEventoBotao(operacao)`**:
+
+   - Adiciona um evento de clique aos botões de criptografar e descriptografar.
+   - Quando um botão é clicado, obtém o texto digitado e chama `processarTexto`.
+
+6. **Adição de eventos aos botões**:
+
+   - Adiciona eventos aos botões de criptografar e descriptografar.
+
+7. **Função `exibirElementosHTML()`**:
+   - Exibe elementos HTML específicos, como o parágrafo "meuParagrafo",
+     tornando-os visíveis na página.
+
+Essencialmente, este código manipula a entrada do usuário, realiza operações de
+criptografia/descriptografia, exibe resultados na página e controla a
+visibilidade de elementos, incluindo uma imagem e parágrafos. Certifique-se de
+chamar as funções nos momentos apropriados para garantir o comportamento
+desejado na interface do usuário.
